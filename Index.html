@@ -2,11 +2,69 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>title</title>
-    <link rel="stylesheet" src="./Style/Style.css" />
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div id="alerts"></div>
+      <div class="maincontainer">
+        <div class="productcontainer">
+          <div class="product">
+            <h1 class="productname">Product 1</h1>
+            <p>Product description</p>
+            <p class="price">$2</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h1 class="productname">Product 2</h1>
+            <p>Product description</p>
+            <p class="price">$10.60</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h1 class="productname">Product 3</h1>
+            <p>Product description</p>
+            <p class="price">$12.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+        </div>
+        <div class="cart">
+          <h2>Cart</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="tablebody"></tbody>
+          </table>
+        </div>
+        <div class="checkout">
+          <h2>Checkout</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Number Of Products</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>x <span id="itemsquantity">0</span></td>
+                <td>$<span id="total">0</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <button id="emptycart">Emtpy Cart</button>
+          <button id="buy">Checkout</button>
+        </div>
+      </div>
+    </main>
+  </body>
   <footer>
-    <script src="./Style/Script.js"></script>
+    <script src="./style/Script.js"></script>
   </footer>
 </html>
